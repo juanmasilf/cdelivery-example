@@ -1,7 +1,13 @@
 
 on:
   push:
-    branches: [ develop ]
+    branches:
+      - main
+      - develop
+  pull_request:
+    branches:
+      - main
+      - develop
 
 name: Node Project `my-app` CI on ECR
 
